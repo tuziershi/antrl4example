@@ -42,9 +42,11 @@
 				<artifactId>antlr4-maven-plugin</artifactId>
 				<version>${antlr.version}</version>
 				<configuration>
-					<grammars>arithmetic.g4</grammars>
-					<visitor>true</visitor>
-					<listener>true</listener>
+					<sourceDirectory>${basedir}</sourceDirectory>
+					<includes>
+						<include>JavaLexer.g4</include>
+						<include>JavaParser.g4</include>
+					</includes>
 				</configuration>
 				<executions>
 					<execution>

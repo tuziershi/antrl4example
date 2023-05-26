@@ -1,16 +1,15 @@
-IDENTIFICATION DIVISION. 
-PROGRAM-ID. HelloWorld. 
+这是一段测试文本
 
+package com.khubla.antlr4example;
 
-ENVIRONMENT DIVISION. 
-CONFIGURATION SECTION. 
-INPUT-OUTPUT SECTION. 
+public class Example {
+    public void Hello(){
+        System.out.print("hello");
+    }
 
-DATA DIVISION. 
-FILE SECTION. 
-WORKING-STORAGE SECTION. 
-LINKAGE SECTION. 
+    public void world(){
+        System.out.print("world");
+    }
+}
 
-PROCEDURE DIVISION. 
-DISPLAY "Hello World". 
-STOP RUN.
+我们可以将这段代码拷贝到任意我们需要的位置
